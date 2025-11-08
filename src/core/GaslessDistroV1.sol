@@ -48,7 +48,7 @@ contract GaslessDistroV1 is Initializable, OwnableUpgradeable, UUPSUpgradeable, 
         initializer
     {
         __Ownable_init(initialOwner);
-
+    
         token = IERC20(_tokenAddress);
         merkleRoot = _initialRoot;
         voucherSigner = _voucherSigner;
