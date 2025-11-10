@@ -49,7 +49,7 @@ contract GaslessDistroV1 is Initializable, OwnableUpgradeable, UUPSUpgradeable {
 
         token = IERC20(_tokenAddress);
         voucherSigner = _voucherSigner;
-        amountToClaim = 1000e18; // default amount
+        amountToClaim = 1000e18; 
     }
 
     // ---------------- Voucher Claim Function ----------------
