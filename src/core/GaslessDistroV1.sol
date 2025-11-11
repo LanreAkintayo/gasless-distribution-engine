@@ -70,7 +70,7 @@ contract GaslessDistroV1 is Initializable, OwnableUpgradeable, UUPSUpgradeable {
         emit TokensClaimedWithVoucher(user, amountToClaim);
     }
 
-    // ---------------- Admin Functions ----------------
+    // ---------------- Admin Functions --------------
 
     function setVoucherSigner(address newSigner) external onlyOwner {
         voucherSigner = newSigner;
